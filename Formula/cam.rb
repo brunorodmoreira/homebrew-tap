@@ -1,25 +1,25 @@
 class Cam < Formula
   desc "Pick the Claude Code account per folder via .claude-account files"
   homepage "https://github.com/brunorodmoreira/cam"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.2/cam-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "d2ea8354fd2c8affa7c9ba93f5d88f6d5bfa694161a189ca4f438e2da45e3e13"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.3/cam-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ad6368725e5c17ea8ae5f0115f3f699aefa84485ab6f652818b9b43cc73fa2c7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.2/cam-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "7765c7e91d7b38e152463bf654b481dcbe95ed1d5c4d03bff36ee9c72d08e5ea"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.3/cam-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a2fa69e1fd22fa945acad349c70a11f5273a2ea773b7c4ff38ee7e16f7e1d5e9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.2/cam-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "100fa28e48a9d1e895e2a2fa26637d35d7a3a749dba09cd85ac0a5324c7ba6e6"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.3/cam-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "966e6f1195d6ab158df0380188da98b788d13ef7f3cdd06c3c09e0b126c428bf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.2/cam-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2add47deeb0b6c0491cdc1b6343e2a0414c668825420320fb6e365ea4073882e"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.3/cam-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5f33a8ac12f81e9cba9a690009882e1de1cb278d103a2bcd6da3125f9e780b16"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -28,6 +28,7 @@ class Cam < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
