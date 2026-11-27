@@ -1,25 +1,25 @@
 class Cam < Formula
   desc "Pick the Claude Code account per folder via .claude-account files"
   homepage "https://github.com/brunorodmoreira/cam"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.4/cam-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "77ff8bc920ffff701afd06b168d64f7b63dc0181a6fec4199ab9f358f4f7865c"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.5/cam-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "d667ccb5818f65c9462ce46e88ef124aaa2ab20bef7dfce1861d5c6660a6e526"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.4/cam-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "2b924967b5ebbaa90a767fedc871f6dda66dbdd1af37a3c5aee8654c64de85ea"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.5/cam-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "5129597cca1777bea77a57e3dfb9da9075e41270eaf15fb7ca18f02095e45e5c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.4/cam-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5a81572c2ee0c2e27da32274d5409c3455fa9806343edb234c36caf24c530cf1"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.5/cam-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1ca0026380e43f667c0dc8e88c86022debf9cd58048432e0d781d780b31066e1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.4/cam-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7cbe09f7bc0b40b30322537f627b73ef21a276f8e7e75e72d55a7c5b66a4ae4f"
+      url "https://github.com/brunorodmoreira/cam/releases/download/v0.1.5/cam-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "845d3743a5a3af30a3c02d8b37f01fc67dc7b6b4849828b37240b0cf66e0a04d"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
